@@ -67,14 +67,14 @@
     .search-bar i {
         font-size: 18px;
     }
-
     .icons-section {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;  /* Cambiado para tener un espacio más uniforme */
         padding: 20px;
         cursor: pointer;
+        gap: 20px;  /* Añadido espacio entre los íconos */
     }
-
+    
     .icon-box {
         width: 68px;
         height: 60px;
@@ -133,7 +133,21 @@
         align-items: center;
         margin-top: 20px;
     }
-
+    @media (max-width: 768px) {
+        .icons-section {
+            justify-content: space-evenly; /* Asegura que haya un buen espacio entre los íconos en pantallas pequeñas */
+            padding: 10px;
+        }
+    
+        .icon-box {
+            width: 55px;  /* Reduce el tamaño de los iconos */
+            height: 50px;
+        }
+    
+        .material-icons {
+            font-size: 24px;  /* Ajusta el tamaño del ícono */
+        }
+    }
     .section-title h3 {
         margin: 0;
     }
@@ -251,12 +265,7 @@
                     overflow: hidden;
                 }
 
-                /* .imagen:hover{
-                        .img{
-                            -webkit-transform: scale(1.3);
-                            transform: scale(1.3);
-                        }
-                    } */
+             
 
                 img {
                     width: 100%;
