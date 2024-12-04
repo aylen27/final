@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                         <div class="final">
                         <br>
-                            <p>Total price: </p>
-                            <h1>$${item.precio}</h1>
+                            <p>Total price: $${item.precio}</p>
+                           
                         </div>
                     `;
                 } else {
